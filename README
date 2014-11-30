@@ -1,0 +1,16 @@
+# Description #
+This is like fcgiwrap but unsupported and wrote in 10 minutes.
+
+# Reason #
+I'm bored and configuring fcgiwrap was being more burdening than writing my own thing.
+
+# Building #
+"go build"
+Included is an nginx location example so you don't have to ask on StackOverflow.
+
+# Command line info #
+"slowcgi -h"
+
+# Extra #
+It can run as its own HTTP server if you want to use proxy_pass instead of fcgi, but I haven't tested it.
+
