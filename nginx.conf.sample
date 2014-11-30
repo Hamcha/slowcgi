@@ -1,0 +1,8 @@
+location ~ ^/cgi-bin(.*)$ {
+	gzip off;
+	error_log /var/log/slowcgi/errors;
+	include fastcgi_params;
+	fastcgi_param REQUEST_URI $1;
+	fastcgi_pass unix:/var/run/slowcgi.sock;
+}
+
